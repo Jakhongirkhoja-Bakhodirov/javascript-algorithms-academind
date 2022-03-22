@@ -30,10 +30,12 @@ end = performance.now();
 console.log(`Call to isPowerOfTwo took ${end - start} milliseconds.`);
 
 const isPowerOfTwoSolvedUsingBitwise = (number) => {
-    if(number < 0) {
-        return false;
+    if(number < 0) {    // 1
+        return false;   // 1
     }
-    return (number & (number-1)) == 0;
+    return (number & (number-1)) == 0;  // 1
 }
+
+// T = 1 + 1 + 1 = 3 => Big O(1)
 
 console.log(isPowerOfTwoSolvedUsingBitwise(81));
