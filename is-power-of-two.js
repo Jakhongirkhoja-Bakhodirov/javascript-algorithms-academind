@@ -9,7 +9,7 @@ const isPowerOfTwo = (number) => {
             return false;
         }
         dividedNumber = dividedNumber/2;
-    }
+    }   
     return true;
 }
 
@@ -28,3 +28,12 @@ console.log(isPowerOfTwo(1000000000000));
 end = performance.now();
 
 console.log(`Call to isPowerOfTwo took ${end - start} milliseconds.`);
+
+const isPowerOfTwoSolvedUsingBitwise = (number) => {
+    if(number < 0) {
+        return false;
+    }
+    return (number & (number-1)) == 0;
+}
+
+console.log(isPowerOfTwoSolvedUsingBitwise(81));
