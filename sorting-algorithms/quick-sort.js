@@ -42,7 +42,7 @@ const array = quickSort([10,-3,4,5,-6]);
 console.log(array);
 
 //Recursive Step Runtime: O(n^logb(a)) => O(n^log2(2)) => O(n^1) => O(n);    
-//Algorithm runtime: O(n^logb(a) * log n) => O(n^log2(2) * log(2)) => O(n*log(2))
+//Algorithm runtime: O(n^logb(a) * log n) => O(n^log2(2) * log(n)) => O(n*log(n))
 // Time Complexity
 
 //Best Case 
